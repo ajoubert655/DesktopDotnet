@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Group3" Class="ExamineeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=Group3;Integrated Security=True" SettingsObjectName="ThreadedProjectWorkshop1.Properties.Settings" SettingsPropertyName="Group3ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Exam" Member="Exams">
+    <Type Name="Exam">
+      <Column Name="ExamID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InstitutionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExamName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ExamDuration" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Exam_UserSession" Member="UserSessions" ThisKey="ExamID" OtherKey="ExamID" Type="UserSession" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Examinee" Member="Examinees">
+    <Type Name="Examinee">
+      <Column Name="ExamineeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ExamineeFirstname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ExamineeLastname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ExamineeEmail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Examinee_UserSession" Member="UserSessions" ThisKey="ExamineeID" OtherKey="ExamineeID" Type="UserSession" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserSession" Member="UserSessions">
+    <Type Name="UserSession">
+      <Column Name="SessionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExamineeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProctorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Exam_UserSession" Member="Exam" ThisKey="ExamID" OtherKey="ExamID" Type="Exam" IsForeignKey="true" />
+      <Association Name="Examinee_UserSession" Member="Examinee" ThisKey="ExamineeID" OtherKey="ExamineeID" Type="Examinee" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,11 @@
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\bin\Debug\ThreadedProjectWorkshop1.exe.config
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\bin\Debug\ThreadedProjectWorkshop1.exe
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\bin\Debug\ThreadedProjectWorkshop1.pdb
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.csprojAssemblyReference.cache
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.frmSearch.resources
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.Properties.Resources.resources
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.csproj.GenerateResource.cache
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.csproj.CoreCompileInputs.cache
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.exe
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.pdb
+C:\Users\edvin\source\repos\ThreadedProjectWorkshop1\ThreadedProjectWorkshop1\obj\Debug\ThreadedProjectWorkshop1.frmAddModifyexaminee.resources
