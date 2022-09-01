@@ -42,7 +42,7 @@ on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ "feature1" ]
+    branches: [ "master" ]
 
 jobs:
 
